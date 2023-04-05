@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		062839A999F782B900228156 /* Pods_Poops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8CC99C3168E0190C005E06 /* Pods_Poops.framework */; };
+		8943831729DDC22900EAAB28 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943831629DDC22900EAAB28 /* Location.swift */; };
+		8943831A29DDC29200EAAB28 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943831929DDC29200EAAB28 /* HomeViewModel.swift */; };
 		C2E167DF2766D0FD0048E9AF /* NaverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E167DE2766D0FD0048E9AF /* NaverMapViewController.swift */; };
 		C2E167E12766D2F80048E9AF /* NaverMapViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E167E02766D2F80048E9AF /* NaverMapViewControllerRepresentable.swift */; };
 		C2F0DE192765A703004DC51A /* PoopsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F0DE182765A703004DC51A /* PoopsApp.swift */; };
@@ -43,6 +45,8 @@
 		20C38383B18E198DD06BA9D3 /* Pods_PoopsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoopsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E253EE9753D14CB24FF0438 /* Pods-Poops-PoopsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poops-PoopsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Poops-PoopsUITests/Pods-Poops-PoopsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		844CF85F5882A1DF19F166C4 /* Pods-PoopsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoopsTests.release.xcconfig"; path = "Target Support Files/Pods-PoopsTests/Pods-PoopsTests.release.xcconfig"; sourceTree = "<group>"; };
+		8943831629DDC22900EAAB28 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8943831929DDC29200EAAB28 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		99E571762FD1782986850BD0 /* Pods-Poops.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poops.release.xcconfig"; path = "Target Support Files/Pods-Poops/Pods-Poops.release.xcconfig"; sourceTree = "<group>"; };
 		9DA5F08CCC3EA0C3BF9059C8 /* Pods_Poops_PoopsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poops_PoopsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23887A899F9623E70C69B35 /* Pods-PoopsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoopsTests.debug.xcconfig"; path = "Target Support Files/Pods-PoopsTests/Pods-PoopsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +95,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8943831429DDB16E00EAAB28 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		8943831529DDC21800EAAB28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8943831629DDC22900EAAB28 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8943831829DDC28300EAAB28 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8943831929DDC29200EAAB28 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		ADF5DCC0CE7F6DE142109ADA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +153,9 @@
 		C2F0DE172765A703004DC51A /* Poops */ = {
 			isa = PBXGroup;
 			children = (
+				8943831829DDC28300EAAB28 /* ViewModels */,
+				8943831529DDC21800EAAB28 /* Models */,
+				8943831429DDB16E00EAAB28 /* Domains */,
 				C21B2E922766D91800AF8D05 /* Info.plist */,
 				C2F0DE182765A703004DC51A /* PoopsApp.swift */,
 				C2F0DE1A2765A703004DC51A /* ContentView.swift */,
@@ -414,7 +444,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F0DE1B2765A703004DC51A /* ContentView.swift in Sources */,
+				8943831A29DDC29200EAAB28 /* HomeViewModel.swift in Sources */,
 				C2E167E12766D2F80048E9AF /* NaverMapViewControllerRepresentable.swift in Sources */,
+				8943831729DDC22900EAAB28 /* Location.swift in Sources */,
 				C2F0DE192765A703004DC51A /* PoopsApp.swift in Sources */,
 				C2E167DF2766D0FD0048E9AF /* NaverMapViewController.swift in Sources */,
 			);
@@ -592,7 +624,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = howme.sweet.Poops;
+				PRODUCT_BUNDLE_IDENTIFIER = home.sweet.Poops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -623,7 +655,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = howme.sweet.Poops;
+				PRODUCT_BUNDLE_IDENTIFIER = home.sweet.Poops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

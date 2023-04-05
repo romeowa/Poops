@@ -9,8 +9,15 @@ import Foundation
 import NMapsMap
 
 class NaverMapViewController : UIViewController {
+    var mapView: NMFMapView?
+    func addMarker(withLat lat: Double, lng: Double) {
+        let marker = NMFMarker(position: NMGLatLng(lat: lat, lng: lng))
+        marker.mapView = mapView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(NMFMapView(frame: self.view.frame))
+        mapView = NMFMapView(frame: self.view.frame)
+        view.addSubview(mapView!)
     }
 }

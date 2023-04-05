@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PoopsApp: App {
+    @StateObject var homeViewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(homeViewModel)
         }
     }
 }
