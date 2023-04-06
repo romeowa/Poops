@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct PoopsApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     @StateObject var homeViewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {

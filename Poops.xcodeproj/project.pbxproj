@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		062839A999F782B900228156 /* Pods_Poops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8CC99C3168E0190C005E06 /* Pods_Poops.framework */; };
 		89197EDA29DE457300E5BF27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89197ED929DE457300E5BF27 /* GoogleService-Info.plist */; };
+		89197EDD29DE484E00E5BF27 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 89197EDC29DE484E00E5BF27 /* FirebaseAnalyticsSwift */; };
+		89197EDF29DE484E00E5BF27 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 89197EDE29DE484E00E5BF27 /* FirebaseDatabaseSwift */; };
+		89197EE129DE487300E5BF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89197EE029DE487300E5BF27 /* AppDelegate.swift */; };
 		8943831729DDC22900EAAB28 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943831629DDC22900EAAB28 /* Location.swift */; };
 		8943831A29DDC29200EAAB28 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943831929DDC29200EAAB28 /* HomeViewModel.swift */; };
 		C2E167DF2766D0FD0048E9AF /* NaverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E167DE2766D0FD0048E9AF /* NaverMapViewController.swift */; };
@@ -47,6 +50,7 @@
 		6E253EE9753D14CB24FF0438 /* Pods-Poops-PoopsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poops-PoopsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Poops-PoopsUITests/Pods-Poops-PoopsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		844CF85F5882A1DF19F166C4 /* Pods-PoopsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoopsTests.release.xcconfig"; path = "Target Support Files/Pods-PoopsTests/Pods-PoopsTests.release.xcconfig"; sourceTree = "<group>"; };
 		89197ED929DE457300E5BF27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89197EE029DE487300E5BF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8943831629DDC22900EAAB28 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8943831929DDC29200EAAB28 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		99E571762FD1782986850BD0 /* Pods-Poops.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poops.release.xcconfig"; path = "Target Support Files/Pods-Poops/Pods-Poops.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89197EDF29DE484E00E5BF27 /* FirebaseDatabaseSwift in Frameworks */,
+				89197EDD29DE484E00E5BF27 /* FirebaseAnalyticsSwift in Frameworks */,
 				062839A999F782B900228156 /* Pods_Poops.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +166,7 @@
 				8943831529DDC21800EAAB28 /* Models */,
 				8943831429DDB16E00EAAB28 /* Domains */,
 				C21B2E922766D91800AF8D05 /* Info.plist */,
+				89197EE029DE487300E5BF27 /* AppDelegate.swift */,
 				C2F0DE182765A703004DC51A /* PoopsApp.swift */,
 				C2F0DE1A2765A703004DC51A /* ContentView.swift */,
 				C2F0DE1C2765A704004DC51A /* Assets.xcassets */,
@@ -226,6 +233,10 @@
 			dependencies = (
 			);
 			name = Poops;
+			packageProductDependencies = (
+				89197EDC29DE484E00E5BF27 /* FirebaseAnalyticsSwift */,
+				89197EDE29DE484E00E5BF27 /* FirebaseDatabaseSwift */,
+			);
 			productName = Poops;
 			productReference = C2F0DE152765A703004DC51A /* Poops.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +312,9 @@
 				Base,
 			);
 			mainGroup = C2F0DE0C2765A703004DC51A;
+			packageReferences = (
+				89197EDB29DE484E00E5BF27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C2F0DE162765A703004DC51A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -451,6 +465,7 @@
 				8943831A29DDC29200EAAB28 /* HomeViewModel.swift in Sources */,
 				C2E167E12766D2F80048E9AF /* NaverMapViewControllerRepresentable.swift in Sources */,
 				8943831729DDC22900EAAB28 /* Location.swift in Sources */,
+				89197EE129DE487300E5BF27 /* AppDelegate.swift in Sources */,
 				C2F0DE192765A703004DC51A /* PoopsApp.swift in Sources */,
 				C2E167DF2766D0FD0048E9AF /* NaverMapViewController.swift in Sources */,
 			);
@@ -807,6 +822,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89197EDB29DE484E00E5BF27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89197EDC29DE484E00E5BF27 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89197EDB29DE484E00E5BF27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		89197EDE29DE484E00E5BF27 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89197EDB29DE484E00E5BF27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2F0DE0D2765A703004DC51A /* Project object */;
 }
