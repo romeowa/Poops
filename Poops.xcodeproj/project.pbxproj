@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		062839A999F782B900228156 /* Pods_Poops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8CC99C3168E0190C005E06 /* Pods_Poops.framework */; };
+		89197EDA29DE457300E5BF27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89197ED929DE457300E5BF27 /* GoogleService-Info.plist */; };
 		8943831729DDC22900EAAB28 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943831629DDC22900EAAB28 /* Location.swift */; };
 		8943831A29DDC29200EAAB28 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943831929DDC29200EAAB28 /* HomeViewModel.swift */; };
 		C2E167DF2766D0FD0048E9AF /* NaverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E167DE2766D0FD0048E9AF /* NaverMapViewController.swift */; };
@@ -45,6 +46,7 @@
 		20C38383B18E198DD06BA9D3 /* Pods_PoopsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoopsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E253EE9753D14CB24FF0438 /* Pods-Poops-PoopsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poops-PoopsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Poops-PoopsUITests/Pods-Poops-PoopsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		844CF85F5882A1DF19F166C4 /* Pods-PoopsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoopsTests.release.xcconfig"; path = "Target Support Files/Pods-PoopsTests/Pods-PoopsTests.release.xcconfig"; sourceTree = "<group>"; };
+		89197ED929DE457300E5BF27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8943831629DDC22900EAAB28 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8943831929DDC29200EAAB28 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		99E571762FD1782986850BD0 /* Pods-Poops.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poops.release.xcconfig"; path = "Target Support Files/Pods-Poops/Pods-Poops.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		C2F0DE0C2765A703004DC51A = {
 			isa = PBXGroup;
 			children = (
+				89197ED929DE457300E5BF27 /* GoogleService-Info.plist */,
 				C2F0DE172765A703004DC51A /* Poops */,
 				C2F0DE282765A704004DC51A /* PoopsTests */,
 				C2F0DE322765A704004DC51A /* PoopsUITests */,
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F0DE202765A704004DC51A /* Preview Assets.xcassets in Resources */,
+				89197EDA29DE457300E5BF27 /* GoogleService-Info.plist in Resources */,
 				C2F0DE1D2765A704004DC51A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
